@@ -1,12 +1,94 @@
-<div style="text-align: center; padding: 50px; font-family: sans-serif;">
-  <h1 style="font-size: 72px; color: #333; margin-bottom: 10px;">Error 404</h1>
-  <h2 style="font-size: 24px; color: #666; margin-top: 0; margin-bottom: 30px;">Page Not Found</h2>
-  
-  <p style="font-size: 16px; color: #888;">
-    This is CDN site, if you want please click the link below to redirect.
-  </p>
-  
-  <a href="https://www.yongbusi.kro.kr" style="display: inline-block; margin-top: 15px; padding: 12px 24px; background-color: #1A73E8; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
-    Click here to redirect
-  </a>
-</div>
+html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset CDN Service Engine</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            background-color: #161b22;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            max-width: 500px;
+        }
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 24px;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        p {
+            color: #8b949e;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        .status-box {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: rgba(56, 239, 125, 0.1);
+            border: 1px solid #238636;
+            color: #7ee787;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .pulse {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #7ee787;
+            border-radius: 50%;
+            margin-right: 6px;
+            box-shadow: 0 0 0 0 rgba(126, 231, 135, 0.7);
+            animation: pulsing 1.5s infinite;
+        }
+        @keyframes pulsing {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(126, 231, 135, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(126, 231, 135, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(126, 231, 135, 0); }
+        }
+        .footer {
+            font-size: 11px;
+            color: #484f58;
+            border-top: 1px solid #21262d;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🚌</div>
+        <h1>Asset CDN Engine</h1>
+        <p>Project the Yongsan-gu Bus Simulator Official Asset Server</p>
+        
+        <div class="status-box">
+            <span class="pulse"></span> HTTP/2 Secure Infrastructure Operational
+        </div>
+        
+        <div class="footer">
+            Secure Endpoint: cdn.yongbusi.kro.kr<br>
+            Distributed Node Cloud Systems by GitHub Pages Enterprise v2.0
+        </div>
+    </div>
+</body>
+</html>
